@@ -7,19 +7,26 @@ namespace AzureBlobProject.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IContainerService _containerService;
+		private readonly IContainerService _containerService;
+		private readonly IBlobService _blobService;
 
-        public HomeController(IContainerService containerService)
-        {
-            _containerService = containerService;
-        }
+		public HomeController(IContainerService containerService, IBlobService blobService)
+		{
+			_containerService = containerService;
+			_blobService = blobService;
+		}
 
-        public async Task<IActionResult> Index()
+		public async Task<IActionResult> Index()
         {
             return View(await _containerService.GetAllContainerAndBlobs());
         }
 
-        public IActionResult Privacy()
+		public async Task<IActionResult> Images()
+		{
+			return View(await _blobService.GetAllBlobsWithUri("vkazurecontainer-private"));
+		}
+
+		public IActionResult Privacy()
         {
             return View();
         }
