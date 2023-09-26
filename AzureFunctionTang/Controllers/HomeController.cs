@@ -1,8 +1,8 @@
-﻿using AzureFunctionTang.Models;
+﻿using AzureFunctionTangyWeb.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace AzureFunctionTang.Controllers
+namespace AzureFunctionTangyWeb.Controllers
 {
     public class HomeController : Controller
     {
