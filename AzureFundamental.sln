@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AzureFunctionExample", "Azu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionTangyWeb", "AzureFunctionTang\AzureFunctionTangyWeb.csproj", "{D057B2B5-C976-40E1-B511-00E5D8620790}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureTangyFunc", "AzureTangyFunc\AzureTangyFunc.csproj", "{140C0374-459E-4754-9FC0-A19B2FD14528}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureTangyFunc", "AzureTangyFunc\AzureTangyFunc.csproj", "{140C0374-459E-4754-9FC0-A19B2FD14528}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

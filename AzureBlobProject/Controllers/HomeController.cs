@@ -16,10 +16,10 @@ namespace AzureBlobProject.Controllers
 			_blobService = blobService;
 		}
 
-		public async Task<IActionResult> Index()
-        {
-            return View(await _containerService.GetAllContainerAndBlobs());
-        }
+		//public async Task<IActionResult> Index()
+  //      {
+  //          return View(await _containerService.GetAllContainerAndBlobs());
+  //      }
 
 		public async Task<IActionResult> Images()
 		{
